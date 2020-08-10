@@ -321,47 +321,4 @@ class Person {
     currentPlace.update();
     legacy.addMove(newMove);
   }
-  //FOR TESTING
-
-  //public void makeMove(String direction) {
-  //  int moveDis = currentPlace.placeDiameter;
-  //  String moveDir = "noDir";
-
-  //  switch(direction) {
-  //  case "right":
-  //    x+=moveDis;
-  //    moveDir = "right";
-  //    break;
-  //  case "left":
-  //    x-=moveDis;
-  //    moveDir = "left";
-  //    break;
-  //  case "down":
-  //    y+=moveDis;
-  //    moveDir = "down";
-  //    break;
-  //  case "up":
-  //    y-=moveDis;
-  //    moveDir = "up";
-  //    break;
-  //  }
-
-  //  Move newMove = new Move(moveDir);
-  //  currentPlace = new Place(x, y);
-  //  String moveState = checkBackward(newMove);
-
-  //  if (moveState == "backward1") {
-  //    currentPlace.weaken();
-  //    legacy.removeMove(legacy.moves.size() - 1);
-  //  } else if (moveState == "backward2") {
-  //    currentPlace.weaken();
-  //    legacy.removeMove(legacy.moves.size() -1);
-  //    legacy.removeMove(legacy.moves.size() -1);
-  //  } else if (moveState == "forward") {
-  //    currentPlace.strengthen();
-  //  }
-
-  //  currentPlace.update();
-  //  legacy.addMove(newMove);
-  //}
 }
