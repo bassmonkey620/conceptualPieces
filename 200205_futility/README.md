@@ -1,3 +1,6 @@
+# Version Guide #
+2008011_futility: p5.js implementation
+2000807_futilityLife: Processing 3.5.4 implementation
 # Futilitty #
 ## Concept ##
 As we trace our paths through we turn, fall back, and intersect with the lives and legacies of others. Futile persistence creates meaning, and out of the struggle between the two, we find community, legacy, and society.
