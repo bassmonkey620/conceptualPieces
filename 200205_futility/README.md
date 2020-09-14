@@ -1,8 +1,10 @@
 # Version Guide #
-2008011_futility: p5.js implementation
+p5.js | [200811_futility](https://github.com/williammlekush/conceptualPieces/tree/master/200205_futility/sketch_20811_futility)
 
-2000807_futilityLife: Processing 3.5.4 implementation
-# Futilitty #
+colorful Processing sketch | [sketch_200914_futilityLife](https://github.com/williammlekush/conceptualPieces/tree/master/200205_futility/sketch_200914_futilityLife)
+
+black-and-white Processing sketch | [sketch_200807_futilityLife](https://github.com/williammlekush/conceptualPieces/tree/master/200205_futility/sketch_200807_futilityLife)
+
 ## Concept ##
 As we trace our paths through we turn, fall back, and intersect with the lives and legacies of others. Futile persistence creates meaning, and out of the struggle between the two, we find community, legacy, and society.
 ## Description ##
