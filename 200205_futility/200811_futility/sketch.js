@@ -1,8 +1,9 @@
 var people;
+var bgColor = 255;
 function setup() {
 
   createCanvas(1080,1080);
-  background(255);
+  background(bgColor);
 
   people = [];
   var pplMax = 100;
@@ -14,8 +15,6 @@ function setup() {
     var newPerson = new Person(randX,randY);
     people.push(newPerson);
    }
-  
-  print(people);
 }
 
 function draw() {
@@ -46,12 +45,12 @@ class Place {
     this.placeColor = color(0, 0);
     this.placeDiameter = 1;
 
-    this.strengthen = function () {
-      this.placeColor = color(0, 10);
+    this.strengthen = function (strongRed, strongGreen, strongBlue) {
+      this.placeColor = color(strongRed, strongGreen, strongBlue, 10);
     };
 
     this.weaken = function () {
-      this.placeColor = color(255, 10);
+      this.placeColor = color(bgColor, 10);
     };
 
     this.getXPos = function () {
@@ -153,6 +152,9 @@ class Person {
     this.legacy = new Legacy();
     this.currentPlace = new Place(this.x, this.y);
     this.movingBack = false;
+    this.myRed = random(50,250);
+    this.myGreen = random(50,250);
+    this.myBlue = random(50,250);
 
     this.checkBackward = function (moveChecking) {
       var myMoves = this.legacy.getMoves();
@@ -322,7 +324,7 @@ class Person {
         this.legacy.removeMove(this.legacy.moves.length - 1);
       }
       else if (moveState == "forward") {
-        this.currentPlace.strengthen();
+        this.currentPlace.strengthen(this.myRed, this.myBlue, this.myGreen);
       }
 
       this.currentPlace.update();
